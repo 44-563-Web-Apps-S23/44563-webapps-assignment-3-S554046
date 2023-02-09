@@ -35,7 +35,11 @@
             
         </p>
         <img src="Half_Girlfriend.jpg">
+
+
         <hr>
+
+
         <h2>Countries to visit</h2>
         <p>In this table i am mentioning the countries that I feel are good to visit and also the reason why I think that country is worth visiting.</p>
         <table>
@@ -66,6 +70,22 @@
             </tr>
         </table>
         <hr>
+        <h3>Code Display</h3>
+ <a href="https://stackoverflow.com/questions/35726510/apache2-htaccess-redirect-to-https-not-working/35726642#35726642">Apache2 .htaccess redirect to https not working</a>
+ <pre>
+    RewriteEngine on
+    RewriteCond %{HTTPS} !on
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+
+<p> If you have a proxy in front of your server performing TLS termination:</p>
+
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+ </pre>
+        </body>
+        </html>
+
             
 
            
